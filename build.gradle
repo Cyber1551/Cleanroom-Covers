@@ -81,6 +81,11 @@ legacyForge {
     }
 }
 
+mixin {
+    add sourceSets.main, "${project.mod_id}.refmap.json"
+    config "${project.mod_id}.mixins.json"
+}
+
 configurations {
     localRuntime
     runtimeClasspath.extendsFrom localRuntime

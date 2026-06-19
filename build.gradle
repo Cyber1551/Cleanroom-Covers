@@ -129,3 +129,9 @@ tasks.named('processResources', ProcessResources).configure {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes('MixinConfigs': "${project.mod_id}.mixins.json")
+    }
+}

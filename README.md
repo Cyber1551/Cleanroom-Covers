@@ -1,6 +1,6 @@
 # Cleanroom Covers (GTCEu Modern addon)
 
-[![MCVersion](https://img.shields.io/badge/Available%20for-MC%201.20.1%20-informational)](https://www.curseforge.com/minecraft/mc-mods/cleanroom-covers) [![License](https://img.shields.io/badge/License-LGPLv3-orange.svg?style=flat-square)](https://raw.githubusercontent.com/Cyber1551/Cleanroom-Covers/refs/heads/main/LICENSE)
+[![MCVersion](https://img.shields.io/badge/Available%20for-MC%201.20.1%20-informational)](https://www.curseforge.com/minecraft/mc-mods/cleanroom-covers) [![License](https://img.shields.io/badge/License-LGPLv3-orange.svg?style=flat-square)](LICENSE)
 ---
 
 ## About

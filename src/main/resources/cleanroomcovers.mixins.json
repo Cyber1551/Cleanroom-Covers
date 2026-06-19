@@ -7,10 +7,10 @@
     "mixinextras": {
         "minVersion": "0.5.0-rc.3"
     },
-    "mixins": [],
-    "client": [
-        "ExampleMixin"
+    "mixins": [
+        "CleanroomConditionMixin"
     ],
+    "client": [],
     "injectors": {
         "defaultRequire": 1
     }

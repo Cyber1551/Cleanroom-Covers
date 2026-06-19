@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "CAC",
+    "CCC"
+  ],
+  "key": {
+    "A": { "item": "cleanroomcovers:cleanroom_cover" },
+    "C": { "item": "gtceu:sterilizing_filter_casing" }
+  },
+  "result": { "item": "cleanroomcovers:sterile_cleanroom_cover", "count": 1 }
+}

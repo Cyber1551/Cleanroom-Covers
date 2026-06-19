@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CHC",
+    "CFC",
+    "CIC"
+  ],
+  "key": {
+    "C": { "item": "gtceu:filter_casing" },
+    "H": { "item": "gtceu:cleaning_maintenance_hatch" },
+    "F": { "item": "gtceu:item_filter" },
+    "I": { "tag": "gtceu:circuits/iv" }
+  },
+  "result": { "item": "cleanroomcovers:cleanroom_cover", "count": 1 }
+}

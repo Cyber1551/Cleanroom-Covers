@@ -28,10 +28,10 @@ Hold a cover and right-click the face of a single-block machine to attach it. Th
 
 ## Recipe
 
-### Cleanroom Cover
+#### Cleanroom Cover
 ![Cleanroom Cover recipe](img/regular_recipe.png)
 
-### Sterile Cleanroom Cover
+#### Sterile Cleanroom Cover
 ![Sterile Cleanroom Cover recipe](img/sterile_recipe.png)
 
 ## Requirements

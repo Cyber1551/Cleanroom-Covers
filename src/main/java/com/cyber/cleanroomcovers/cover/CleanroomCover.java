@@ -20,16 +20,26 @@ public class CleanroomCover extends CoverBehavior {
 
     @Override
     public boolean canAttach() {
-        if (!super.canAttach()) return false;
+        return super.canAttach() && getRejectReason(coverHolder) == null;
+    }
 
+    // Why a cleanroom cover can't be attached to the given holder
+    public static String getRejectReason(ICoverable coverHolder) {
         var machine = MetaMachine.getMachine(coverHolder.getLevel(), coverHolder.getPos());
 
-        var hasCleanroomCapability = machine instanceof ICleanroomReceiver;
-        var isMultiblock = machine instanceof IMultiController || machine instanceof IMultiPart;
-        var noExistingCover = coverHolder.getCovers().stream().noneMatch(c -> c instanceof CleanroomCover);
+        if (coverHolder.getCovers().stream().anyMatch(c -> c instanceof CleanroomCover)) {
+            return "cover.cleanroomcovers.reject.already";
+        }
 
-        // Only allow single block machines with cleanroom capability and no existing cleanroom cover
-        return hasCleanroomCapability && !isMultiblock && noExistingCover;
+        if (machine instanceof IMultiController || machine instanceof IMultiPart) {
+            return "cover.cleanroomcovers.reject.multiblock";
+        }
+
+        if (!(machine instanceof ICleanroomReceiver)) {
+            return "cover.cleanroomcovers.reject.not_receiver";
+        }
+
+        return null;
     }
 
     public CleanroomType getCleanroomType() {

@@ -1,4 +1,16 @@
 {
     "item.cleanroomcovers.cleanroom_cover": "Cleanroom Cover",
-    "item.cleanroomcovers.sterile_cleanroom_cover": "Sterile Cleanroom Cover"
+    "item.cleanroomcovers.sterile_cleanroom_cover": "Sterile Cleanroom Cover",
+
+    "item.cleanroomcovers.cleanroom_cover.tooltip.0": "For granting Cleanroom access to single-block machines!",
+    "item.cleanroomcovers.cleanroom_cover.tooltip.1": "Grants as:",
+    "item.cleanroomcovers.cleanroom_cover.tooltip.2": "  §aCleanroom",
+
+    "item.cleanroomcovers.sterile_cleanroom_cover.tooltip.0": "For granting Sterile Cleanroom access to single-block machines!",
+    "item.cleanroomcovers.sterile_cleanroom_cover.tooltip.1": "Grants as:",
+    "item.cleanroomcovers.sterile_cleanroom_cover.tooltip.2": "  §aSterile Cleanroom",
+
+    "cover.cleanroomcovers.reject.already": "§cThis machine already has a cleanroom cover",
+    "cover.cleanroomcovers.reject.multiblock": "§cCan only be placed on single-block machines",
+    "cover.cleanroomcovers.reject.not_receiver": "§cThis machine can't use a cleanroom"
 }

@@ -1,6 +1,7 @@
-package com.cyber.cleanroomcovers.cover;
+package com.cyber.cleanroomcovers.registry;
 
 import com.cyber.cleanroomcovers.CleanroomCovers;
+import com.cyber.cleanroomcovers.cover.CleanroomCover;
 import com.gregtechceu.gtceu.api.cover.CoverDefinition;
 import com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType;
 import com.gregtechceu.gtceu.api.registry.GTRegistries;
@@ -19,13 +20,13 @@ public class CleanroomCoverDefinitions {
         STERILE_CLEANROOM_COVER = register("sterile_cleanroom_cover", CleanroomType.STERILE_CLEANROOM, STERILE_FILTER_CASING);
     }
 
-    private static CoverDefinition register(String id, CleanroomType cleanroomType, ResourceLocation faceTexture) {
-        var resourceLocation = new ResourceLocation(CleanroomCovers.MOD_ID, id);
-        var coverDefinition = new CoverDefinition(resourceLocation,
+    private static CoverDefinition register(String path, CleanroomType cleanroomType, ResourceLocation faceTexture) {
+        var id = CleanroomCovers.id(path);
+        var coverDefinition = new CoverDefinition(id,
                 (d, coverable, side) -> new CleanroomCover(d, coverable, side, cleanroomType),
                 () -> () -> new SimpleCoverRenderer(faceTexture));
 
-        GTRegistries.COVERS.register(resourceLocation, coverDefinition);
+        GTRegistries.COVERS.register(id, coverDefinition);
         return coverDefinition;
     }
 }

@@ -29,7 +29,7 @@ side = "BOTH"
 [[dependencies.${mod_id}]]
 modId = "gtceu"
 mandatory = true
-versionRange = "[1.0,)"
+versionRange = "[7.0.0,)"
 # Load AFTER GregTech so its classes (and mixin targets) exist when this mod loads
 ordering = "AFTER"
 side = "BOTH"
